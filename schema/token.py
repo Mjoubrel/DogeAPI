@@ -2,7 +2,7 @@
 
 from typing import Optional
 from datetime import timedelta, datetime
-from jose import jwt, JWTError
+from jose import JWT as jwt, JWTError
 from schema.schemas import TokenData
 from decouple import config
 
@@ -20,12 +20,12 @@ def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
         expire = datetime.utcnow() + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
 
     to_encode.update({"exp": expire})
-    return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    return JWT.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
 
 
 def verify_token(token: str, credentials_exception):
     try:
-        payload = jwt.decode(token, SECRET_KEY, algorithms=ALGORITHM)
+        payload = JWT.decode(token, SECRET_KEY, algorithms=ALGORITHM)
         email: str = payload.get("sub")
         if email is None:
             raise credentials_exception
