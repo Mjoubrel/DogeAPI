@@ -1,0 +1,36 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+aiofiles = "*"
+asgiref = "*"
+bcrypt = "*"
+cffi = "*"
+click = "*"
+colorama = "*"
+ecdsa = "*"
+fastapi = "*"
+greenlet = "*"
+h11 = "*"
+passlib = "*"
+pyasn1 = "*"
+pycparser = "*"
+pydantic = "*"
+python-decouple = "*"
+python-jose = "*"
+python-multipart = "*"
+rsa = "*"
+six = "*"
+starlette = "*"
+typing-extensions = "*"
+uvicorn = "*"
+Jinja2 = "*"
+MarkupSafe = "*"
+SQLAlchemy = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
