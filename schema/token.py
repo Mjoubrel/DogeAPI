@@ -2,7 +2,7 @@
 
 from typing import Optional
 from datetime import timedelta, datetime
-from jose import JWT as jwt
+from jose import jwt
 from schema.schemas import TokenData
 from decouple import config
 
