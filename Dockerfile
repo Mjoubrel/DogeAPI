@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-FROM tiangolo/uvicorn-gunicorn-fastapi:python3.9
+FROM tiangolo/uvicorn-gunicorn-fastapi:latest
 RUN apt update && apt upgrade -y
 
 RUN apt install -y -q build-essential python3-pip python3-dev

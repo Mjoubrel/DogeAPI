@@ -30,6 +30,7 @@ Jinja2 = "*"
 MarkupSafe = "*"
 SQLAlchemy = "*"
 jinja2 = "*"
+jose = "*"
 
 [dev-packages]
 
