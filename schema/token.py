@@ -7,9 +7,9 @@ from schema.schemas import TokenData
 from decouple import config
 
 # openssl rand -hex 32
-SECRET_KEY = config("SECRET_KEY")
+SECRET_KEY = 'jhe0lbf)365y&8(+k@c2_*)7dt(*xqnwb@a@^y_*(rn2h+*=j#'
 ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = config("ACCESS_TOKEN_EXPIRE_MINUTES", default=60, cast=int)
+ACCESS_TOKEN_EXPIRE_MINUTES = 60
 
 
 def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
