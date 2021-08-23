@@ -29,6 +29,7 @@ uvicorn = "*"
 Jinja2 = "*"
 MarkupSafe = "*"
 SQLAlchemy = "*"
+jinja2 = "*"
 
 [dev-packages]
 
